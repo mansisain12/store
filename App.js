@@ -1,6 +1,7 @@
 import React from "react";
 import { View, Text, Image, ScrollView, StatusBar, SafeAreaView, Dimensions,StyleSheet,TextInput } from "react-native";
 import Shop from "./components/Shop";
+import Home from "./components/Home";
 
 const App = () => {
   const { width, height } = Dimensions.get('window')
@@ -13,8 +14,16 @@ const App = () => {
           horizontal={true}
           scrollEventThrottle={16}
           pagingEnabled={true}
+          // showsHorizontalScrollIndicator={false}
+          // scrollEnabled={false}
+          // centerContent={false}
+          // contentInset={false}
+          // zoomScale={3.0}
+          // maximumZoomScale={6}
+          // minimumZoomScale={8.0}
         >
           <View style={{width,height}}>
+            <Home />
           </View>
 
 
